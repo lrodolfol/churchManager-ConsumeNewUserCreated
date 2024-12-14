@@ -1,0 +1,17 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: consume-newUser-created-uat
+    environment:
+      RABBITMQ_HOST: rabbitDocker-uat
+      RABBITMQ_USERNAME: sinqia
+      RABBITMQ_PASSWORD: sinqia123
+      RABBITMQ_PORT: 5672
+    networks:
+      - church-registration-uat_netchurchmanager-uat
+
+networks:
+  church-registration-uat_netchurchmanager-uat:
+    external: true # Indica que a rede já existe no Docker

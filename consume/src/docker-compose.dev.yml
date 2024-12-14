@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: consume-newUser-created-dev
+    environment:
+      RABBITMQ_HOST: localhost
+      RABBITMQ_USERNAME: sinqia
+      RABBITMQ_PASSWORD: sinqia123
+      RABBITMQ_PORT: 5672
