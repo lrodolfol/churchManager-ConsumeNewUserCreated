@@ -10,8 +10,8 @@ services:
       RABBITMQ_PASSWORD: sinqia123
       RABBITMQ_PORT: 5672
     networks:
-      - church-registration-uat_netchurchmanager-uat
+      - church-registration-uat_netchurchmanager
 
 networks:
-  church-registration-uat_netchurchmanager-uat:
+  church-registration-uat_netchurchmanager:
     external: true # Indica que a rede já existe no Docker

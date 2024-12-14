@@ -1,4 +1,4 @@
-package tinosnegocios.new_user_created.consume;
+package tinosnegocios.new_user_created.consume.Models;
 
 import java.util.Date;
 
