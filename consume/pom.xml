@@ -53,6 +53,17 @@
 			<version>2.11.0</version>
 		</dependency>
 
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>sns</artifactId>
+			<version>2.29.34</version>
+		</dependency>
+		<dependency>
+			<groupId>software.amazon.awssdk</groupId>
+			<artifactId>auth</artifactId>
+			<version>2.29.34</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
