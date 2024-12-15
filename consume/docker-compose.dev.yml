@@ -9,3 +9,5 @@ services:
       RABBITMQ_USERNAME: sinqia
       RABBITMQ_PASSWORD: sinqia123
       RABBITMQ_PORT: 5672
+      AWSSecretKey: "***"
+      AWSAccessKey: "***"
