@@ -34,7 +34,8 @@ public class RabbitMqConsume {
             Connection conn = factory.newConnection();
             Channel channel = conn.createChannel();
 
-            channel.queueDeclarePassive(QUEUE_NAME_DLQ);
+            //channel.queueDeclarePassive(QUEUE_NAME_DLQ);
+            channel.queueDeclare(QUEUE_NAME_DLQ, false, false, false, null);
 
             Map<String, Object> arguments = new HashMap<>();
             arguments.put("x-dead-letter-exchange", EXCHANGE_DLQ); // Usar o exchange padrão (direct)
